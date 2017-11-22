@@ -1,15 +1,18 @@
+public class UnivPhoneInfo extends PhoneInfo {
+	String major = null;
+	int grade;
 
-public class UnivPhoneInfo extends PhoneInfo{
-	String major=null;
-	UnivPhoneInfo(String name, String phoneNumber) {
-		super(name, phoneNumber);
-		
+	UnivPhoneInfo(String name, String phoneNumber, String birthday,String major, int grade) {
+		super(name, phoneNumber,birthday);
+		this.major = major;
+		this.grade = grade;
 	}
-	@Override
+
 	void showInfo() {
-		// TODO Auto-generated method stub
+
 		super.showInfo();
-		System.out.println("전공 : "+ major);
+		System.out.println("전공 : " + major);
 	}
+	
 
 }
